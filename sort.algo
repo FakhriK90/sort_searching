@@ -1,0 +1,21 @@
+/* 1. Starting by the second elemet.
+2. Compare the selected element with all its precedents in the list and insert it in its correct position.
+3. Repeat step 2 for the next element until you get to the last one.
+
+PROCEDURE sort_insert(VAR arr: ARRAY_OF INTEGER[n]; n:INTEGER)
+VAR
+    pos,k,i: INTEGER;
+BEGIN
+    //pos is the value to insert in the appropriate place of the array.
+    pos:= t[i]; //pos is the value to insert in the appropriate place of the array.
+
+    //we shift all the values ​​of the array, less than pos, to the right to empty the location.
+    k:= k-i;
+    WHILE (k>0 and t[p]>pos) DO
+        t[k+1]:= t[k];
+        k:= k-1;
+    END_WHILE
+
+    //Finally the pos value is inserted in the appropriate place
+    t[p+1]:= pos;
+END
